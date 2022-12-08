@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro",sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 72.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-div{
   min-height: 100vh;
+
+  background:black;
+   display: flex;
+   justify-content: center;
+}
+.child-div{
+
+ width: 100%;
+ height: 500px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ 
+}
+.image{
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+.addItem{
+  margin: 10px;
+  width: 40%;
+  height: 42px;
+  background-color: blue;
+  font-size: 10px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color:#fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row ;
+
+
+ padding:10px;
+}
+@media screen and (max-width:600px) {
+   .addItem{
+     font-size: 8px;
+     width: 50%;
+   }
+}
+
+.input{
+  width: 100%;
+  height: 28px;
+}
+.btn:hover{
+  color: #fff;
+  background-color: chocolate;
+  cursor: pointer;
+}
+#logo:hover{
+  color:rgb(244, 116, 12);
+  cursor: pointer;
+}
+.add-btn{
+  padding:5px;
+}
+.edit{
+   width:0.5px;
+   padding-left: 60%;
+}
+.showItem{
+  padding: 10px;
+  background-color: blue;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+.text{
+  padding: 12px;
+  margin: 12px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 12px;
+  background-color: blue;
+  border-radius:12px;
+  border: 2px solid #fff;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
